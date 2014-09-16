@@ -14,7 +14,7 @@ create_VM.sh
 Important:
 This script need to be located in /vmfs/volumes/datastore1/
 and be executable by root : chmod +x create_VM.sh
-This script create a Virtual Machines for each turret in a range
+This script create a Virtual Machines for each VM in a range
 Options
 -n: name of VMs before the number 000x-y (needed)
 -t: network interface number : the interface name need to be InterfaceXX with XX=t (needed)
@@ -27,15 +27,15 @@ Exemple:
 start_VM.sh
 This script start a range of VM in a user-defined range
 Options:
--x: Start of the range of VM to start: number of turret (VM_xxxx) (needed)
--y: End of the range of VM to start: number of turret (VM_yyyy) (needed)
+-x: Start of the range of VM to start: number of VM (VM_xxxx) (needed)
+-y: End of the range of VM to start: number of VM (VM_yyyy) (needed)
 Exemple:
 ./start_VM.sh -x1 -y12 will start every VM between VM_0001 and VM_0012
 -------------------------
 shut_VM.sh
 This script shut a range of VM in a user-defined range
 Options:
--x: Start of the range of VM to shut: number of turret (VM_xxxx) (needed)
--y: End of the range of VM to shut: number of turret (VM_yyyy) (needed)
+-x: Start of the range of VM to shut: number of VM (VM_xxxx) (needed)
+-y: End of the range of VM to shut: number of VM (VM_yyyy) (needed)
 Exemple:
 ./shut_VM.sh -x1 -y12 will shut every VM between VM_0001 and VM_0012
