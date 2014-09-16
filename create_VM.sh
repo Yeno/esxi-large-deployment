@@ -160,16 +160,16 @@ if $ERR; then
 fi
 
 
-for TURRETNUMBER in `seq $STARTRANGE $ENDRANGE`
+for VMNUM in `seq $STARTRANGE $ENDRANGE`
 do
 
-if [ $TURRETNUMBER -lt 1000 ] && [ $TURRETNUMBER -ge 100 ]
-then TEMPNAME="${NAME}0${TURRETNUMBER}"
-elif [ $TURRETNUMBER -lt 100 ] && [ $TURRETNUMBER -ge 10 ]
-then TEMPNAME="${NAME}00${TURRETNUMBER}"
-elif [ $TURRETNUMBER -lt 10 ]
-then TEMPNAME="${NAME}000${TURRETNUMBER}"
-else TEMPNAME=$NAME$TURRETNUMBER
+if [ $VMNUM -lt 1000 ] && [ $VMNUM -ge 100 ]
+then TEMPNAME="${NAME}0${VMNUM}"
+elif [ $VMNUM -lt 100 ] && [ $VMNUM -ge 10 ]
+then TEMPNAME="${NAME}00${VMNUM}"
+elif [ $VMNUM -lt 10 ]
+then TEMPNAME="${NAME}000${VMNUM}"
+else TEMPNAME=$NAME$VMNUM
 fi
 
 	if [ -d "$TEMPNAME" ]; then
