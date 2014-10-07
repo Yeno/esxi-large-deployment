@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#paratmers: machine name (required), CPU (number of cores), RAM (memory size in MB), HDD Disk size (in GB), ISO (Location of ISO image, optional)
+#parameters: machine name (required), CPU (number of cores), RAM (memory size in MB), HDD Disk size (in GB), ISO (Location of ISO image, optional)
 #default params: CPU: 2, RAM: 4096, DISKSIZE: 20GB, ISO: 'blank'
 
 phelp() {
